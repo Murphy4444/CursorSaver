@@ -55,8 +55,8 @@ class Position {
         $this.MinHeight = $Screen.Bounds.Y
         $this.MaxWidth = $Screen.Bounds.Width
         $this.MaxHeight = $Screen.Bounds.Height
-        $this.X = Get-Random -Minimum ($this.MinWidth + 1) -Maximum ($this.MaxWidth - 1) 
-        $this.Y = Get-Random -Minimum ($this.MinHeight + 1) -Maximum ($this.MaxHeight - 1)
+        $this.X = [System.Windows.Forms.Cursor]::Position.X
+        $this.Y = [System.Windows.Forms.Cursor]::Position.Y
     }
 
 }
